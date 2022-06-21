@@ -15,4 +15,4 @@ folders are created like:
 ```[inputted dir]/squareish```
 
 ### But its poorly written
-I wrote this in less than an hour just to challenge myself. Maybe I'll clean it up someday when I feel like it. Feel free to pull anything that makes it faster!
+I wrote this in less than an hour just to challenge myself. Maybe I'll clean it up someday when I feel like it. Feel free to push anything that makes it faster!

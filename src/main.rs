@@ -13,6 +13,7 @@ fn main() {
     match fs::read_dir(&args[1]) {
         Ok(_) => println!("Reading directory {}",&args[1]),
         Err(err) => {
+            println!("{}",err);
             println!("Not a directory!");
             println!("Usage: sortpic [directory of images]");
             std::process::exit(1);
@@ -62,7 +63,7 @@ fn main() {
             let width: i32 = lol.0 as i32;
             let height: i32 = lol.1 as i32;
             let ratio: i32 = width-height;
-            if ratio > 300 && ratio < -300 {
+            if ratio > 300  {
                 // Height is smaller than the width (probably)!
                 let out = [&args[1],"/landscape/",&name].join("");
                 println!("{}",out);

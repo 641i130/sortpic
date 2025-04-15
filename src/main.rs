@@ -68,12 +68,12 @@ fn main() {
                 let out = [&args[1],"/landscape/",&name].join("");
                 println!("{}",out);
                 fs::copy(f.unwrap().path(), out).unwrap();
-            } else if ratio == 0 || (ratio < 300 && ratio > 300) {
+            /*} else if ratio == 0 || (ratio < 300 && ratio > 300) {
                 // Square-ish images
                 let out = [&args[1],"/squarelike/",&name].join("");
                 println!("{}",out);
                 fs::copy(f.unwrap().path(), out).unwrap();
-            } else {
+            */} else {
                 // NEGATIVE IMAGE! PORTAIT
                 let out = [&args[1],"/portrait/",&name].join("");
                 println!("{}",out);
